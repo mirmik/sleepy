@@ -6,3 +6,4 @@ git -C rabbit pull || git clone https://github.com/mirmik/rabbit
 git -C RxCpp pull || git clone https://github.com/ReactiveX/RxCpp
 git -C cpp-httplib pull || git clone https://github.com/yhirose/cpp-httplib
 git -C rfdaemon pull || git clone https://github.com/mirmik/rfdaemon
+git -C video-stream pull || git clone https://github.com/mirmik/video-stream

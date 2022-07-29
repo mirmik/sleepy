@@ -21,3 +21,5 @@ do
     sh ./tools/install.sh
     cd ..
 done
+
+cp bin/reproxy-arm /usr/bin/reproxy
