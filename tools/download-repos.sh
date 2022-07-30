@@ -17,10 +17,10 @@ echo "update rabbit"
 git -C rabbit pull || git clone https://github.com/mirmik/rabbit rabbit
 
 echo "update RxCpp"
-git -C RxCpp pull || git clone https://github.com/mirmik/RxCpp RxCpp
+git -C RxCpp pull || git clone https://github.com/ReactiveX/RxCpp RxCpp
 
 echo "update cpp-httplib"
-git -C cpp-httplib pull || git clone https://github.com/mirmik/cpp-httplib cpp-httplib
+git -C cpp-httplib pull || git clone https://github.com/yhirose/cpp-httplib cpp-httplib
 
 echo "update rfdaemon"
 git -C rfdaemon pull || git clone https://github.com/mirmik/rfdaemon rfdaemon

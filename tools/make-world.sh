@@ -1,3 +1,4 @@
+set -ex
 
 # for each package in repos.list file
 list_of_packages=$(cat ./tools/repos.list)
@@ -20,10 +21,11 @@ cmake --build . --config Release
 sudo cmake --build . --config Release --target install
 cd ..
 
-for directory in $list_of_directories
+echo ${list_of_packages}
+for package in $list_of_packages
 do
-    echo "Making $directory"
-    cd $directory
+    echo "Making $package"
+    cd $package
     sh ./tools/build.sh
     sudo sh ./tools/install.sh
 
