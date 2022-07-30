@@ -27,3 +27,6 @@ git -C rfdaemon pull || git clone https://github.com/mirmik/rfdaemon rfdaemon
 
 echo "update ircc"
 git -C ircc pull || git clone https://github.com/mirmik/ircc ircc
+
+echo "update video-stream"
+git -C video-stream pull || git clone https://github.com/mirmik/video-stream

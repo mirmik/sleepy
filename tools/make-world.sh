@@ -1,10 +1,11 @@
-set -e
-list_of_directories=$(cat tools/list_of_directories.txt)
+
+# for each package in repos.list file
+list_of_packages=$(cat ./tools/repos.list)
 
 cd RxCpp
 cmake .
-cmake --build . --config Release
-sudo cmake --build . --config Release --target install
+cmake --build .
+sudo cmake --build . --target install
 cd ..
 
 cd cpp-httplib
