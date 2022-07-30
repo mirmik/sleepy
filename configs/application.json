@@ -1,4 +1,4 @@
-{
+ {
     "apps": [
 		{
     	        "command": "/usr/local/bin/crowker --udp 10009",
@@ -11,9 +11,14 @@
 			"restart" : "always"
 		},
 		{
-    	        "command": "/home/mirmik/project/zippo/soft/ctrans-arduino-adapter/ctrans-arduino-adapter",
-    	        "name": "ctrans-adapter",
-    	        "restart": "always"
-    	}
+			"command" : "/home/mirmik/sleepy/video-stream/stream 10042 1 352 288",
+			"name" : "video-stream-left-eye",
+			"restart" : "always"
+		},
+		{
+			"command" : "/usr/local/bin/start_after 500 /home/mirmik/sleepy/video-stream/stream 10041 0 352 288",
+			"name" : "video-stream-right-eye",
+			"restart" : "always"
+		}
     ]
 }
