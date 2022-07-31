@@ -11,13 +11,8 @@
 			"restart" : "always"
 		},
 		{
-			"command" : "/home/mirmik/sleepy/video-stream/stream 10042 1 352 288",
-			"name" : "video-stream-left-eye",
-			"restart" : "always"
-		},
-		{
-			"command" : "/usr/local/bin/start_after 500 /home/mirmik/sleepy/video-stream/stream 10041 0 352 288",
-			"name" : "video-stream-right-eye",
+			"command" : "/home/mirmik/sleepy/video-stream/stream 10042 640 480 50",
+			"name" : "video-stream",
 			"restart" : "always"
 		}
     ]
